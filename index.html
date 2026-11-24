@@ -1,0 +1,858 @@
+
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Serrurier Bruxelles | Dépannage et ouverture de porte – VeriLock</title>
+
+    <meta name="description" content="Besoin d'un serrurier à Bruxelles ? VeriLock intervient pour l'ouverture de porte, le dépannage et le remplacement de serrure à Schaerbeek, Evere et Saint-Josse-ten-Noode.">
+
+    <style>
+        :root {
+            --primary: #153b59;
+            --primary-dark: #102c43;
+            --accent: #e5a52f;
+            --text: #344454;
+            --muted: #687888;
+            --light: #f3f7fa;
+            --border: #e2e9ef;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background: #f7f9fb;
+            line-height: 1.75;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            color: #bd8119;
+        }
+
+        .page-container {
+            max-width: 1080px;
+            margin: 40px auto;
+            padding: 0 22px;
+        }
+
+        .article-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(20, 45, 65, 0.06);
+        }
+
+        .hero {
+            padding: 58px 48px;
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .hero-label {
+            display: inline-block;
+            padding: 6px 13px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255,255,255,.35);
+            border-radius: 30px;
+            font-size: 13px;
+            letter-spacing: .4px;
+        }
+
+        .hero h1 {
+            max-width: 760px;
+            margin: 0 0 18px;
+            color: var(--white);
+            font-size: clamp(30px, 5vw, 43px);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            max-width: 780px;
+            margin: 0;
+            color: #e8f0f5;
+            font-size: 17px;
+        }
+
+        .hero a {
+            color: var(--white);
+        }
+
+        .hero-contact {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 14px;
+            margin-top: 27px;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 12px 21px;
+            border-radius: 7px;
+            background: var(--accent);
+            color: #172b3b !important;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .contact-note {
+            color: #e8f0f5;
+            font-size: 14px;
+        }
+
+        .article-content {
+            padding: 42px 48px 50px;
+        }
+
+        .article-content h2 {
+            margin: 42px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+            color: var(--primary);
+            font-size: 27px;
+            line-height: 1.3;
+        }
+
+        .article-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .article-content h3 {
+            margin: 25px 0 8px;
+            color: var(--primary-dark);
+            font-size: 19px;
+            line-height: 1.4;
+        }
+
+        .article-content p {
+            margin: 0 0 17px;
+        }
+
+        .intro-box {
+            margin: 26px 0;
+            padding: 22px 25px;
+            border-left: 4px solid var(--accent);
+            border-radius: 7px;
+            background: var(--light);
+        }
+
+        .intro-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            margin: 25px 0;
+        }
+
+        .service-card {
+            padding: 20px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        .service-card h3 {
+            margin-top: 0;
+        }
+
+        .service-card p {
+            margin-bottom: 0;
+            font-size: 15px;
+        }
+
+        .area-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 13px;
+            margin: 22px 0;
+        }
+
+        .area-card {
+            padding: 18px 12px;
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            background: var(--light);
+            text-align: center;
+        }
+
+        .area-card strong {
+            display: block;
+            color: var(--primary);
+            font-size: 17px;
+        }
+
+        .area-card span {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .price-table-wrap {
+            overflow-x: auto;
+            margin: 22px 0;
+        }
+
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 420px;
+        }
+
+        .price-table th {
+            padding: 14px 16px;
+            background: var(--primary);
+            color: var(--white);
+            text-align: left;
+        }
+
+        .price-table td {
+            padding: 13px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .price-table tr:nth-child(even) td {
+            background: var(--light);
+        }
+
+        .price-note {
+            padding: 17px 20px;
+            border: 1px solid #f0dfb8;
+            border-radius: 8px;
+            background: #fff9ed;
+            font-size: 14px;
+        }
+
+        .steps {
+            margin: 22px 0;
+            padding-left: 22px;
+        }
+
+        .steps li {
+            margin-bottom: 13px;
+            padding-left: 5px;
+        }
+
+        .faq-item {
+            padding: 18px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq-item h3 {
+            margin: 0 0 8px;
+        }
+
+        .faq-item p {
+            margin-bottom: 0;
+        }
+
+        .final-cta {
+            margin-top: 42px;
+            padding: 32px;
+            border-radius: 12px;
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .final-cta h2 {
+            margin-top: 0;
+            padding: 0;
+            border: 0;
+            color: var(--white);
+        }
+
+        .final-cta p {
+            color: #e8f0f5;
+        }
+
+        .final-cta a:not(.contact-button) {
+            color: var(--white);
+        }
+
+        .business-details {
+            margin-top: 23px;
+            padding-top: 17px;
+            border-top: 1px solid rgba(255,255,255,.25);
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .page-container {
+                margin: 15px auto;
+                padding: 0 12px;
+            }
+
+            .hero {
+                padding: 38px 24px;
+            }
+
+            .article-content {
+                padding: 28px 23px 35px;
+            }
+
+            .service-grid,
+            .area-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .article-content h2 {
+                font-size: 23px;
+            }
+
+            .final-cta {
+                padding: 25px 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page-container">
+<main class="article-card">
+
+    <header class="hero">
+        <span class="hero-label">VeriLock · Serrurerie à Bruxelles</span>
+
+        <h1>Un serrurier à Bruxelles quand votre porte vous joue des tours</h1>
+
+        <p>
+            Porte claquée, clé cassée, serrure bloquée ou cylindre à remplacer ?
+            VeriLock propose des services de serrurerie pour les particuliers
+            et les professionnels à Bruxelles, avec une attention particulière
+            pour Schaerbeek, Evere et Saint-Josse-ten-Noode.
+        </p>
+
+        <div class="hero-contact">
+            <a class="contact-button" href="tel:+32488997442">
+                Appeler le +32 488 99 74 42
+            </a>
+            <span class="contact-note">Disponibilité annoncée 24h/24 et 7j/7</span>
+        </div>
+    </header>
+
+    <div class="article-content">
+
+        <section>
+            <h2>Un souci de serrure à Bruxelles ? Parlons-en</h2>
+
+            <p>
+                Cela arrive toujours au mauvais moment. Vous rentrez chez vous après
+                une longue journée, vous glissez la clé dans la serrure et elle ne
+                tourne plus. Ou vous sortez quelques secondes, la porte se referme
+                derrière vous et vous réalisez que vos clés sont restées à l’intérieur.
+                Parfois, c’est simplement une clé qui casse dans le cylindre au moment
+                où vous essayez d’ouvrir.
+            </p>
+
+            <p>
+                Dans ces moments-là, on a surtout envie de retrouver l’accès à son
+                logement sans perdre davantage de temps. Mais avant de forcer la
+                poignée ou de tenter une manipulation avec un objet quelconque,
+                mieux vaut demander conseil à un serrurier. Une mauvaise tentative
+                peut abîmer le cylindre, la serrure ou même la porte.
+            </p>
+
+            <p>
+                <a href="https://share.google/Zy3KcuN35TGLtGqMq">VeriLock – Serrurier Schaerbeek Bruxelles</a>
+                accompagne les particuliers et les professionnels pour différents
+                problèmes de fermeture. L’entreprise est située avenue Zénobe Gramme
+                85, à Schaerbeek, et propose des prestations dans la Région de
+                Bruxelles-Capitale.
+            </p>
+
+            <div class="intro-box">
+                <p>
+                    <strong>Vous êtes bloqué devant votre porte ?</strong><br>
+                    Appelez le +32 488 99 74 42, décrivez ce qui se passe et indiquez
+                    votre adresse. Vous pourrez vérifier la disponibilité du serrurier,
+                    le délai estimé et le prix avant de confirmer l’intervention.
+                </p>
+            </div>
+
+            <p>
+                Pour découvrir les prestations et les informations de contact,
+                consultez le site de
+                <a href="https://verilock.be/">serrurerie Bruxelles</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Des services de serrurerie pour les habitants de Bruxelles</h2>
+
+            <p>
+                Une porte claquée, une serrure usée et un mécanisme multipoints qui
+                ne répond plus ne se traitent pas de la même manière. Le type de porte,
+                le modèle de serrure et l’origine de la panne ont leur importance.
+                C’est pourquoi il est utile de décrire le problème dès le premier appel.
+            </p>
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <h3>Ouverture de porte claquée</h3>
+                    <p>
+                        Vous avez laissé vos clés à l’intérieur ? Une porte claquée
+                        n’est pas toujours verrouillée à clé. Le serrurier examine
+                        la situation et choisit une méthode d’ouverture adaptée
+                        à la porte et à la serrure.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Ouverture de porte verrouillée</h3>
+                    <p>
+                        Une clé perdue, un cylindre bloqué ou une serrure qui refuse
+                        de tourner peuvent empêcher l’accès au logement. Précisez
+                        si la porte est verrouillée à double tour et si la clé
+                        fonctionne encore.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Réparation et remplacement de serrure</h3>
+                    <p>
+                        Une serrure qui accroche ou qui ferme mal n’est pas forcément
+                        bonne à remplacer. Une réparation ou un réglage peut parfois
+                        suffire. Si le mécanisme est trop abîmé, un remplacement
+                        peut être envisagé.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Remplacement de cylindre</h3>
+                    <p>
+                        Après une perte de clés, un changement d’occupant ou une
+                        défaillance du cylindre, son remplacement peut être utile.
+                        Le nouveau modèle doit être compatible avec la porte
+                        et le système de fermeture.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Serrures multipoints</h3>
+                    <p>
+                        Une serrure multipoints verrouille la porte à plusieurs
+                        endroits. Si la poignée devient dure à relever ou si certains
+                        points ne s’enclenchent plus, le mécanisme et l’alignement
+                        de la porte doivent être vérifiés.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Portes blindées et portes de sécurité</h3>
+                    <p>
+                        Une porte blindée possède un système de fermeture particulier.
+                        Le type de serrure, le cylindre et les points de verrouillage
+                        doivent être pris en compte avant de choisir une méthode
+                        d’ouverture ou de réparation.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Extraction de clé cassée</h3>
+                    <p>
+                        Un morceau de clé coincé dans le cylindre peut bloquer
+                        complètement la serrure. Évitez de pousser le fragment
+                        plus loin ou d’utiliser un outil inadapté. Décrivez
+                        la situation au serrurier.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Copie de clés</h3>
+                    <p>
+                        VeriLock propose la reproduction de clés standards et
+                        multipoints, ainsi que des copies pour différents usages,
+                        selon le modèle et les possibilités de reproduction.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Coffres-forts</h3>
+                    <p>
+                        Un coffre-fort qui ne s’ouvre plus peut empêcher l’accès
+                        à des documents ou à des objets importants. VeriLock annonce
+                        des services d’ouverture, de réparation et d’installation
+                        de coffres-forts.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Portes, garages et locaux professionnels</h3>
+                    <p>
+                        Les commerces, bureaux et garages ont eux aussi besoin
+                        de systèmes de fermeture fiables. Pour une serrure bloquée,
+                        un verrou endommagé ou une installation à remplacer,
+                        communiquez le type d’accès concerné lors de votre appel.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>VeriLock à Bruxelles : Schaerbeek, Evere et Saint-Josse-ten-Noode</h2>
+
+            <p>
+                VeriLock est installé à Schaerbeek, mais les demandes ne concernent
+                pas uniquement cette commune. Les habitants de différents quartiers
+                de Bruxelles peuvent avoir besoin d’un dépannage, que ce soit pour
+                une porte d’entrée, une serrure de sécurité ou un cylindre à remplacer.
+            </p>
+
+            <p>
+                L’activité est principalement orientée vers Bruxelles, avec une
+                attention particulière portée aux communes suivantes :
+            </p>
+
+            <div class="area-grid">
+                <div class="area-card">
+                    <strong>Schaerbeek</strong>
+                    <span>1030 Bruxelles</span>
+                </div>
+
+                <div class="area-card">
+                    <strong>Evere</strong>
+                    <span>1140 Bruxelles</span>
+                </div>
+
+                <div class="area-card">
+                    <strong>Saint-Josse-ten-Noode</strong>
+                    <span>1210 Bruxelles</span>
+                </div>
+            </div>
+
+            <h3>Serrurier à Schaerbeek</h3>
+
+            <p>
+                À Schaerbeek, les situations peuvent être très différentes d’une
+                adresse à l’autre : porte d’appartement dans un immeuble, entrée
+                d’une maison, porte blindée ou accès d’un commerce. VeriLock est
+                établi avenue Zénobe Gramme 85, dans le code postal 1030.
+                Si vous êtes dans la commune, indiquez votre rue et le problème
+                rencontré afin de vérifier les possibilités de déplacement.
+            </p>
+
+            <p>
+                Pour une demande dans cette commune, retrouvez également la page
+                <a href="https://verilock.be/serrurier-schaerbeek/">Serrurier d'urgence à Schaerbeek</a>.
+            </p>
+
+            <h3>Serrurier à Evere</h3>
+
+            <p>
+                Une serrure qui ne tourne plus, une porte claquée ou une clé cassée
+                peut aussi bien arriver dans une habitation que dans un local
+                professionnel à Evere. Si vous avez besoin d’un serrurier,
+                expliquez la situation par téléphone et demandez si votre adresse
+                peut être prise en charge.
+            </p>
+
+            <h3>Serrurier à Saint-Josse-ten-Noode</h3>
+
+            <p>
+                À Saint-Josse-ten-Noode, un problème de serrure peut rapidement
+                devenir gênant, surtout lorsqu’il empêche de rentrer chez soi
+                ou de sécuriser une porte après une panne. Pour éviter toute
+                mauvaise manipulation, demandez conseil avant de forcer le mécanisme.
+            </p>
+
+            <p>
+                La disponibilité dépend de l’adresse, de l’heure et des interventions
+                déjà en cours. Le délai annoncé doit donc toujours être confirmé
+                lors de votre appel.
+            </p>
+        </section>
+
+        <section>
+            <h2>Combien coûte un dépannage de serrurier à Bruxelles ?</h2>
+
+            <p>
+                Le tarif dépend de la prestation demandée. Ouvrir une porte simplement
+                claquée n’implique pas le même travail que remplacer une serrure
+                multipoints ou intervenir sur une porte blindée. Le matériel,
+                l’état du mécanisme et l’horaire peuvent également influencer
+                le montant final.
+            </p>
+
+            <p>
+                À titre de repère, voici les tarifs issus de la grille de référence
+                de Serrurier Lambert. Ils ne constituent pas un devis VeriLock :
+                demandez confirmation des prix directement à VeriLock avant
+                toute intervention.
+            </p>
+
+            <div class="price-table-wrap">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Prestation</th>
+                            <th>Tarif indicatif de référence</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ouverture d’une porte claquée</td>
+                            <td>150 €</td>
+                        </tr>
+                        <tr>
+                            <td>Ouverture d’une porte verrouillée</td>
+                            <td>180 €</td>
+                        </tr>
+                        <tr>
+                            <td>Ouverture d’une porte blindée verrouillée</td>
+                            <td>230 à 350 €</td>
+                        </tr>
+                        <tr>
+                            <td>Réglage de porte</td>
+                            <td>130 à 200 €</td>
+                        </tr>
+                        <tr>
+                            <td>Remplacement de cylindre</td>
+                            <td>À partir de 79 €</td>
+                        </tr>
+                        <tr>
+                            <td>Remplacement de serrure</td>
+                            <td>À partir de 149 €</td>
+                        </tr>
+                        <tr>
+                            <td>Remplacement de serrure multipoints</td>
+                            <td>À partir de 349 €</td>
+                        </tr>
+                        <tr>
+                            <td>Installation d’une rosace de sécurité</td>
+                            <td>À partir de 149 €</td>
+                        </tr>
+                        <tr>
+                            <td>Reproduction de clé</td>
+                            <td>À partir de 29 €</td>
+                        </tr>
+                        <tr>
+                            <td>Ouverture de coffre-fort</td>
+                            <td>À partir de 180 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="price-note">
+                <strong>Un conseil avant de confirmer :</strong>
+                demandez toujours le prix total, et pas uniquement le tarif
+                de base. Vérifiez si le déplacement, la TVA, les pièces et
+                les éventuels suppléments de soirée, de nuit, de week-end
+                ou de jour férié sont compris. Les tarifs doivent être
+                confirmés par VeriLock pour votre situation.
+            </div>
+
+            <p>
+                VeriLock indique également un supplément de 30 € pour certaines
+                interventions d’urgence à Schaerbeek par rapport au tarif habituel.
+                Vérifiez au téléphone si ce supplément s’applique à votre demande
+                et demandez le montant total avant le déplacement.
+            </p>
+        </section>
+
+        <section>
+            <h2>Ce que vous pouvez vérifier avant l’intervention</h2>
+
+            <p>
+                Quand on est bloqué devant sa porte, on n’a pas forcément envie
+                de passer du temps à poser des questions. Pourtant, quelques
+                vérifications permettent d’éviter les malentendus et de savoir
+                exactement à quoi s’attendre.
+            </p>
+
+            <ul>
+                <li>Expliquez si la porte est claquée, verrouillée ou si la serrure est cassée.</li>
+                <li>Précisez votre adresse exacte et votre commune.</li>
+                <li>Demandez le délai estimé avant l’arrivée du serrurier.</li>
+                <li>Faites confirmer le prix total avant le début des travaux.</li>
+                <li>Vérifiez les éventuels suppléments liés à l’horaire.</li>
+                <li>Demandez si les pièces installées et la main-d’œuvre sont couvertes par une garantie.</li>
+                <li>Demandez une facture à la fin de l’intervention.</li>
+            </ul>
+
+            <p>
+                VeriLock annonce une garantie de deux ans sur le matériel et
+                la main-d’œuvre pour ses interventions. Une facture est également
+                prévue après la prestation. Si vous comptez transmettre le document
+                à votre assurance, renseignez-vous au préalable sur les conditions
+                de remboursement de votre contrat.
+            </p>
+        </section>
+
+        <section>
+            <h2>Comment se déroule une demande de dépannage chez VeriLock ?</h2>
+
+            <p>
+                Le plus simple est de commencer par un appel. Vous n’avez pas besoin
+                de connaître le nom technique de votre serrure. Décrivez simplement
+                ce que vous voyez et ce qui se passe lorsque vous essayez d’ouvrir
+                ou de fermer la porte.
+            </p>
+
+            <ol class="steps">
+                <li>
+                    <strong>Vous expliquez le problème.</strong>
+                    Indiquez si la porte est claquée, verrouillée, si la clé est
+                    cassée ou si le mécanisme ne répond plus.
+                </li>
+                <li>
+                    <strong>Vous donnez votre adresse.</strong>
+                    Précisez votre commune, votre code postal et votre rue pour
+                    vérifier la possibilité d’intervention.
+                </li>
+                <li>
+                    <strong>Vous demandez le délai et le tarif.</strong>
+                    Faites confirmer la disponibilité et le montant total
+                    avant de valider le déplacement.
+                </li>
+                <li>
+                    <strong>Le serrurier examine la situation.</strong>
+                    Le type de porte et l’état de la serrure permettent de
+                    déterminer les solutions envisageables.
+                </li>
+                <li>
+                    <strong>Les travaux sont réalisés après votre accord.</strong>
+                    Une fois la solution et le prix acceptés, l’intervention
+                    convenue peut être effectuée.
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Questions fréquentes sur les services de VeriLock à Bruxelles</h2>
+
+            <div class="faq-item">
+                <h3>VeriLock intervient-il en dehors de Schaerbeek ?</h3>
+                <p>
+                    Oui, VeriLock annonce des services dans la Région de
+                    Bruxelles-Capitale. Les zones particulièrement ciblées
+                    dans cet article sont Schaerbeek, Evere et Saint-Josse-ten-Noode.
+                    Appelez pour confirmer la disponibilité à votre adresse.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>VeriLock est-il disponible la nuit et le week-end ?</h3>
+                <p>
+                    Une disponibilité 24h/24 et 7j/7 est annoncée. Le mieux
+                    est de téléphoner pour confirmer la prise en charge de
+                    votre demande et les éventuels suppléments horaires.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>En combien de temps un serrurier peut-il arriver ?</h3>
+                <p>
+                    VeriLock annonce une intervention pouvant avoir lieu en
+                    moins de 30 minutes selon la zone. Le délai réel dépend
+                    de votre adresse, de la circulation et des disponibilités.
+                    Demandez une estimation au moment de l’appel.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Dois-je remplacer toute la serrure si ma clé est cassée ?</h3>
+                <p>
+                    Pas nécessairement. Si le morceau de clé peut être extrait
+                    et que le cylindre fonctionne encore correctement, un
+                    remplacement complet n’est pas toujours indispensable.
+                    Il faut vérifier l’état du mécanisme avant de décider.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>VeriLock propose-t-il le remplacement de cylindre ?</h3>
+                <p>
+                    VeriLock présente des services liés aux serrures, aux verrous
+                    et à leur installation ou réparation. Contactez l’entreprise
+                    pour confirmer le modèle de cylindre disponible et le prix
+                    correspondant à votre porte.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Une facture est-elle remise après l’intervention ?</h3>
+                <p>
+                    VeriLock indique remettre une facture après chaque intervention.
+                    Elle peut notamment servir dans le cadre d’une demande auprès
+                    de votre assurance. Le remboursement dépend toutefois
+                    des garanties de votre contrat.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Quel est le numéro de téléphone de VeriLock ?</h3>
+                <p>
+                    Vous pouvez joindre VeriLock au +32 488 99 74 42.
+                    Indiquez votre adresse et décrivez le problème pour
+                    vérifier les possibilités d’intervention.
+                </p>
+            </div>
+        </section>
+
+        <section class="final-cta">
+            <h2>Besoin d’un serrurier à Bruxelles ? Contactez VeriLock</h2>
+
+            <p>
+                Une porte qui refuse de s’ouvrir, une clé coincée dans le cylindre
+                ou une serrure qui ne ferme plus correctement ? Inutile de forcer
+                le mécanisme au risque d’aggraver la situation. Contactez VeriLock,
+                expliquez votre problème et demandez les conditions d’intervention.
+            </p>
+
+            <p>
+                Que vous soyez à Schaerbeek, Evere ou Saint-Josse-ten-Noode,
+                un appel vous permettra de vérifier la disponibilité du serrurier,
+                le délai estimé et le tarif applicable à votre situation.
+            </p>
+
+            <a class="contact-button" href="tel:+32488997442">
+                Appeler VeriLock
+            </a>
+
+            <div class="business-details">
+                <p>
+                    <strong>VeriLock – Serrurier Schaerbeek Bruxelles</strong><br>
+                    Adresse : Avenue Zénobe Gramme 85, 1030 Schaerbeek, Belgique<br>
+                    Téléphone : +32 488 99 74 42<br>
+                    E-mail : contact@verilock.be<br>
+                    Site web :
+                    <a href="https://verilock.be/">https://verilock.be/</a>
+                </p>
+
+                <p>
+                    <a href="https://www.google.com/maps/place/VeriLock+%E2%80%93+Serrurier+Schaerbeek+Bruxelles/@50.8783147,4.3863982,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3c3e8c2c7c763:0x508b453a7e6c1462!8m2!3d50.8783147!4d4.3863982!16s%2Fg%2F11lzcrtdxc?hl=en&amp;entry=ttu&amp;g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D">
+                        Voir VeriLock sur Google Maps
+                    </a>
+                </p>
+
+
+
+            </div>
+        </section>
+
+    </div>
+</main>
+</div>
+
+</body>
+</html>
